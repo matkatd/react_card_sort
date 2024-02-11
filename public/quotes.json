@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "categories": ["Inspiration", "Motivation"],
+    "subcategories": ["Success"],
+    "author": "Winston Churchill",
+    "quote": "Success is not final, failure is not fatal: It is the courage to continue that counts."
+  },
+  {
+    "id": 2,
+    "categories": ["Love", "Relationships"],
+    "subcategories": ["Romance"],
+    "author": "Audrey Hepburn",
+    "quote": "The best thing to hold onto in life is each other."
+  },
+  {
+    "id": 3,
+    "categories": ["Wisdom"],
+    "subcategories": ["Life"],
+    "author": "John Lennon",
+    "quote": "Life is what happens when you're busy making other plans."
+  },
+  {
+    "id": 4,
+    "categories": ["Humor"],
+    "subcategories": ["Funny"],
+    "author": "Douglas Adams",
+    "quote": "I'm writing a book. I've got the page numbers done."
+  },
+  {
+    "id": 5,
+    "categories": ["Wisdom"],
+    "subcategories": ["Learning"],
+    "author": "Albert Einstein",
+    "quote": "The only source of knowledge is experience."
+  },
+  {
+    "id": 6,
+    "categories": ["Motivation"],
+    "subcategories": ["Achievement"],
+    "author": "Theodore Roosevelt",
+    "quote": "Believe you can and you're halfway there."
+  },
+  {
+    "id": 7,
+    "categories": ["Love", "Relationships"],
+    "subcategories": ["Friendship"],
+    "author": "C.S. Lewis",
+    "quote": "Friendship is born at that moment when one person says to another, 'What! You too? I thought I was the only one.'"
+  },
+  {
+    "id": 8,
+    "categories": ["Inspiration"],
+    "subcategories": ["Dreams"],
+    "author": "Eleanor Roosevelt",
+    "quote": "The future belongs to those who believe in the beauty of their dreams."
+  },
+  {
+    "id": 9,
+    "categories": ["Wisdom"],
+    "subcategories": ["Mindfulness"],
+    "author": "Eckhart Tolle",
+    "quote": "The present moment is a powerful goddess."
+  },
+  {
+    "id": 10,
+    "categories": ["Humor"],
+    "subcategories": ["Sarcasm"],
+    "author": "Oscar Wilde",
+    "quote": "Sarcasm is the lowest form of wit, but the highest form of intelligence."
+  },
+  {
+    "id": 11,
+    "categories": ["Motivation"],
+    "subcategories": ["Persistence"],
+    "author": "Vince Lombardi",
+    "quote": "It's not whether you get knocked down, it's whether you get up."
+  },
+  {
+    "id": 12,
+    "categories": ["Inspiration"],
+    "subcategories": ["Courage"],
+    "author": "Maya Angelou",
+    "quote": "Courage is resistance to fear, mastery of fear—not absence of fear."
+  },
+  {
+    "id": 13,
+    "categories": ["Wisdom"],
+    "subcategories": ["Reflection"],
+    "author": "Socrates",
+    "quote": "The unexamined life is not worth living."
+  },
+  {
+    "id": 14,
+    "categories": ["Love", "Relationships"],
+    "subcategories": ["Family"],
+    "author": "Michael J. Fox",
+    "quote": "Family is not an important thing, it's everything."
+  },
+  {
+    "id": 15,
+    "categories": ["Humor"],
+    "subcategories": ["Life"],
+    "author": "Tom Lehrer",
+    "quote": "Life is like a sewer... what you get out of it depends on what you put into it."
+  },
+  {
+    "id": 16,
+    "categories": ["Motivation"],
+    "subcategories": ["Leadership"],
+    "author": "Steve Jobs",
+    "quote": "The only way to do great work is to love what you do."
+  },
+  {
+    "id": 17,
+    "categories": ["Inspiration"],
+    "subcategories": ["Gratitude"],
+    "author": "Melody Beattie",
+    "quote": "Gratitude makes sense of our past, brings peace for today, and creates a vision for tomorrow."
+  },
+  {
+    "id": 18,
+    "categories": ["Wisdom"],
+    "subcategories": ["Philosophy"],
+    "author": "Socrates",
+    "quote": "The more I learn, the more I realize how much I don't know."
+  },
+  {
+    "id": 19,
+    "categories": ["Love", "Relationships"],
+    "subcategories": ["Marriage"],
+    "author": "Barbara De Angelis",
+    "quote": "A successful marriage requires falling in love many times, always with the same person."
+  },
+  {
+    "id": 20,
+    "categories": ["Humor"],
+    "subcategories": ["Wit"],
+    "author": "Aristotle",
+    "quote": "Wit is educated insolence."
+  }
+]
