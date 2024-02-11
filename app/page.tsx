@@ -17,6 +17,7 @@ type Quote = {
   quote: string;
   categories: string[];
   subcategories: string[];
+  author: string;
 };
 
 const QuotesComponent = () => {
@@ -25,6 +26,8 @@ const QuotesComponent = () => {
   const [selectedSubcategory, setSelectedSubcategory] = useState("");
   const [categories, setCategories] = useState([""]);
   const [subcategories, setSubcategories] = useState([""]);
+  const [selectedAuthor, setSelectedAuthor] = useState("");
+  const [authors, setAuthors] = useState([""]);
 
   useEffect(() => {
     // Fetch quotes from the external JSON file
@@ -36,6 +39,10 @@ const QuotesComponent = () => {
         const uniqueCategories = [
           ...new Set<string>(data.flatMap((quote: Quote) => quote.categories)),
         ];
+        const uniqueAuthors = [
+          ...new Set<string>(data.flatMap((quote: Quote) => quote.author)),
+        ];
+        setAuthors(uniqueAuthors);
         setCategories(uniqueCategories);
       })
       .catch((error) => console.error("Error fetching quotes:", error));
@@ -57,10 +64,15 @@ const QuotesComponent = () => {
     setSelectedCategory(category);
     // Reset subcategory when changing category
     setSelectedSubcategory("");
+    setSelectedAuthor("");
   };
 
   const handleSubcategoryChange = (event: SelectChangeEvent<string>) => {
     setSelectedSubcategory(event.target.value);
+  };
+
+  const handleAuthorChange = (event: SelectChangeEvent<string>) => {
+    setSelectedAuthor(event.target.value);
   };
   return (
     <div>
@@ -85,7 +97,7 @@ const QuotesComponent = () => {
             ))}
           </Select>
         </FormControl>
-        <FormControl fullWidth>
+        <FormControl fullWidth sx={{ pr: "1rem" }}>
           <InputLabel id="subcategory-select-label">Subcategory</InputLabel>
           <Select
             variant="filled"
@@ -103,6 +115,24 @@ const QuotesComponent = () => {
             ))}
           </Select>
         </FormControl>
+        <FormControl fullWidth>
+          <InputLabel id="author-select-label">Author</InputLabel>
+          <Select
+            variant="filled"
+            sx={{ background: "#31ad62", opacity: 0.8 }}
+            labelId="author-select-label"
+            fullWidth
+            value={selectedAuthor}
+            onChange={handleAuthorChange}
+          >
+            <MenuItem value="">All Authors</MenuItem>
+            {authors.map((author) => (
+              <MenuItem key={author} value={author}>
+                {author}
+              </MenuItem>
+            ))}
+          </Select>
+        </FormControl>
       </Toolbar>
 
       {/* Render quotes based on selected category and subcategory */}
@@ -112,7 +142,8 @@ const QuotesComponent = () => {
             (!selectedCategory ||
               quote.categories.includes(selectedCategory)) &&
             (!selectedSubcategory ||
-              quote.subcategories.includes(selectedSubcategory))
+              quote.subcategories.includes(selectedSubcategory)) &&
+            (!selectedAuthor || quote.author === selectedAuthor)
         )
         .map((quote: Quote) => (
           <Card key={quote.id} style={{ margin: "16px" }}>
